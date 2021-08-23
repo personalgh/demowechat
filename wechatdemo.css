@@ -1,0 +1,131 @@
+body{
+  background-color: rgba(37, 150, 190, 0.5);
+}
+.frame{
+  position: fixed;
+  display: flex;
+  width: 1000px;
+  height: 600px;
+  /* background-color: rgb(88,88,88); */
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.leftBar{
+  /* display: inline-block; */
+  background-color: rgb(46,46,46);
+  height: 100%;
+  width: 70px;
+  border: 1px, solid ,red;
+}
+.tabBar{
+  background-color: rgb(247,247,247);
+  width: 300px;
+  height: 100%;
+  display: flex;
+}
+.tabs{
+  flex-grow: 1;
+  overflow: scroll;
+}
+.rightContent{
+  flex-grow: 1;
+  background-color: rgb(245,245,245);
+  border-left: 1px solid rgb(214,214,214);
+}
+/*right top hr: 231*/
+.avatar{
+  width: 80%;
+  margin: auto;
+  margin-top: 50%;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.search{
+  width: 100%;
+  height: 70px;
+  background-color: rgb(247,247,247)
+}
+.tab{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background-color: rgb(230,230,230);
+  user-select: none;
+  /* border: 1px red solid; */
+  /* border: 1px black solid; */
+}
+.tab:hover{
+  background-color: rgb(223,220,219);
+}
+.tabAvatar{
+  margin-top: 13px;
+  margin-left: 13px;
+  height: 54px;
+  width: 54px;
+}
+.tabText{
+  margin-left: 20px;
+  margin-top: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px red solid; */
+  margin-bottom: 10px;
+}
+.timeAndMute{
+  /* margin-left: 20px; */
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.tabName{
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-size: 15pt;
+}
+.lastMessage{
+  color: rgb(153,153,153);
+  font-size: 13pt;
+}
+.search{
+  position: absolute;
+  width: 300px;
+}
+.tabs{
+  margin-top: 70px;
+}
+.searchBox{
+  position: fixed;
+  top: 30px;
+  left: 90px;
+  resize: none;
+  border-radius: 4px;
+  background-color: rgb(226,226,226);
+  outline: none;
+  border: none;
+}
+.searchBox:focus{
+  background-color: rgb(248,248,248);
+  border: 1px rgb(226,226,226) solid;
+}
+.searchBox:focus::placeholder{
+  color: rgb(248,248,248);
+}
+.addChat{
+  position: fixed;
+  top: 30px;
+  left: 285px;
+  resize: none;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(226,226,226);
+  line-height: 100%;
+  text-align: center;
+  border-radius: 4px;
+}
+.addChat:hover{
+  background-color: rgb(209,209,209);
+}
