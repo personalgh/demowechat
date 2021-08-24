@@ -21,7 +21,7 @@ body{
 }
 .tabBar{
   background-color: rgb(247,247,247);
-  width: 300px;
+  width: 280px;
   height: 100%;
   display: flex;
 }
@@ -95,7 +95,7 @@ img{
 }
 .search{
   position: absolute;
-  width: 300px;
+  width: 280px;
 }
 .tabs{
   margin-top: 70px;
@@ -120,7 +120,7 @@ img{
 .addChat{
   position: fixed;
   top: 30px;
-  left: 285px;
+  left: 300px;
   resize: none;
   height: 20px;
   width: 20px;
@@ -144,6 +144,8 @@ img{
 .chatContent{
   height: 350px;
   border-bottom: 1px rgb(236,236,236) solid;
+  display: flex;
+  flex-direction: column;
 }
 .iconBar{
   height: 33px;
@@ -204,4 +206,42 @@ img{
 .sendButton:hover{
   background-color: rgb(18,150,17);
   color: white;
+}
+.myMessageBox{
+  display: flex;
+  align-self: flex-end;
+  margin: 20px;
+}
+.yourMessageBox{
+  display: flex;
+  margin: 20px;
+}
+.myMessage{
+  background-color: rgb(158,234,106);
+  margin-right: 20px;
+  padding: 15px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+  /* line-height: 30px; */
+}
+.yourMessage{
+  border: 1px rgb(237,237,237) solid;
+  margin-left: 20px;
+  padding: 15px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+  background-color: white;
+  /* line-height: 30px; */
+}
+.yourMessage:hover{
+  background-color: rgb(246,246,246);
+}
+.myMessage:hover{
+  background-color: rgb(152,225,101);
+}
+.chatAvatar{
+  height: 40px;
+  width: 40px;
 }
