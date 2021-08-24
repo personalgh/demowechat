@@ -33,6 +33,8 @@ body{
   flex-grow: 1;
   background-color: rgb(245,245,245);
   border-left: 1px solid rgb(214,214,214);
+  display: flex;
+  flex-direction: column;
 }
 /*right top hr: 231*/
 .avatar{
@@ -47,7 +49,8 @@ img{
 .search{
   width: 100%;
   height: 70px;
-  background-color: rgb(247,247,247)
+  background-color: rgb(247,247,247);
+  user-select: none;
 }
 .tab{
   width: 100%;
@@ -125,7 +128,80 @@ img{
   line-height: 100%;
   text-align: center;
   border-radius: 4px;
+  cursor: pointer;
 }
 .addChat:hover{
   background-color: rgb(209,209,209);
+}
+.chatName{
+  height: 70px;
+  border-bottom: 1px rgb(231,231,231) solid;
+  font-size: 17pt;
+  line-height: 80px;
+  user-select: none;
+  padding-left: 25px;
+}
+.chatContent{
+  height: 350px;
+  border-bottom: 1px rgb(236,236,236) solid;
+}
+.iconBar{
+  height: 33px;
+  padding-left: 28px;
+}
+.iconBarIcon{
+  margin: 4px;
+  margin-left: 6px;
+  /* margin-right: 11px; */
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+.chatInput{
+  flex-grow: 1;
+  background-color: rgb(245,245,245);
+  user-select: none;
+  /* top: 0px;
+  bottom: 0px; */
+}
+.chatInput:focus-within{
+  background-color: rgb(255,255,255);
+}
+.chatInput:focus-within+div{
+  background-color: rgb(255,255,255);
+}
+.inputBoxDiv{
+  height: calc(100% - 43px);
+  padding-left: 25px;
+  padding-right: 10px;
+  padding-top: 10px;
+
+}
+.inputArea{
+  width: 100%;
+  height: 100%;
+  resize: none;
+  overflow: auto;
+  outline: none;
+  border: none;
+  padding: 0px;
+  background-color: rgb(245,245,245);
+}
+.inputArea:focus{
+  background-color: rgb(255,255,255);
+}
+.sendButton{
+  margin: 5px;
+  float: right;
+  margin-right: 20px;
+  width: 80px;
+  height: 25px;
+  border: 1px rgb(225,225,225) solid;
+  color: rgb(96,96,96);
+  font-size: 13pt;
+  cursor: pointer;
+}
+.sendButton:hover{
+  background-color: rgb(18,150,17);
+  color: white;
 }
