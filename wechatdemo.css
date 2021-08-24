@@ -59,8 +59,13 @@ img{
   display: flex;
   background-color: rgb(230,230,230);
   user-select: none;
-  /* border: 1px red solid; */
-  /* border: 1px black solid; */
+}
+.tabSelected{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background-color: rgb(223,220,219);
+  user-select: none;
 }
 .tab:hover{
   background-color: rgb(223,220,219);
