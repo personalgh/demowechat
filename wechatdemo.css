@@ -41,6 +41,7 @@ body{
   width: 80%;
   margin: auto;
   margin-top: 50%;
+  user-select: none;
 }
 img{
   width: 100%;
@@ -223,6 +224,7 @@ img{
   padding-top: 8px;
   padding-bottom: 5px;
   border-radius: 4px;
+  position: relative;
   /* line-height: 30px; */
 }
 .yourMessage{
@@ -233,6 +235,7 @@ img{
   padding-bottom: 5px;
   border-radius: 4px;
   background-color: white;
+  position: relative;
   /* line-height: 30px; */
 }
 .yourMessage:hover{
@@ -244,4 +247,61 @@ img{
 .chatAvatar{
   height: 40px;
   width: 40px;
+  user-select: none;
+}
+.yourMessage::before{
+  content: "";
+  border-right: 10px solid rgb(237,237,237);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.yourMessage::after{
+  content: "";
+  border-right: 10px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -9px;
+}
+.yourMessage:hover::after{
+  border-right: 10px solid rgb(246,246,246);
+}
+.myMessage::before{
+  content: "";
+  border-left: 10px solid rgb(158,234,106);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -10px;
+  margin-right: -9px;
+  z-index: 2;
+}
+.myMessage::after{
+  content: "";
+  border-left: 10px solid rgb(158,234,106);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -10px;
+  margin-right: -10px;
+  z-index: 1;
+}
+.myMessage:hover::before{
+  border-left: 10px solid rgb(152,225,101);
 }
