@@ -152,6 +152,7 @@ img{
   border-bottom: 1px rgb(236,236,236) solid;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 .iconBar{
   height: 33px;
@@ -220,10 +221,14 @@ img{
   display: flex;
   align-self: flex-end;
   margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .yourMessageBox{
   display: flex;
   margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .myMessage{
   background-color: rgb(158,234,106);
@@ -233,6 +238,8 @@ img{
   padding-bottom: 5px;
   border-radius: 4px;
   position: relative;
+  max-width: 400px;
+  word-wrap: break-word;
   /* line-height: 30px; */
 }
 .yourMessage{
@@ -244,6 +251,8 @@ img{
   border-radius: 4px;
   background-color: white;
   position: relative;
+  max-width: 400px;
+  word-wrap: break-word;
   /* line-height: 30px; */
 }
 .yourMessage:hover{
